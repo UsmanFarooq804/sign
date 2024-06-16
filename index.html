@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Signature App</h1>
+            <p>Create and save your digital signature</p>
+        </div>
+
+        <canvas class="canvas" id="myCanvas" width="400" height="200"></canvas>
+
+        <div class="tools">
+            <label for="colorPicker">Text Color:</label>
+            <input class="color-picker" type="color" id="colorPicker">
+
+            <label for="canvasColor">Background Color:</label>
+            <input class="color-picker" type="color" id="canvasColor">
+
+            <label for="fontSizePicker">Font Size:</label>
+            <select id="fontSizePicker">
+                <option value="5px">5px</option>
+                <option value="10px">10px</option>
+                <option value="15px">15px</option>
+                <option value="20px">20px</option>
+                <option value="25px">25px</option>
+                <option value="30px">30px</option>
+                <option value="35px">35px</option>
+                <option value="40px">40px</option>
+                <option value="45px">45px</option>
+                <option value="50px">50px</option>
+            </select>
+        </div>
+
+        <div class="tools">
+            <button id="clearButton">Clear</button>
+            <button id="saveButton">Save & Download</button>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Signature App. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
